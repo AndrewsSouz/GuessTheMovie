@@ -1,8 +1,8 @@
-public class Hider extends Search {
+public class Guesser extends MovieSorter {
 
     private String hidedMovie;
 
-    public Hider(){
+    public Guesser(){
         hidedMovie = super.getMovie().replaceAll("\\S", "-");
     }
 
@@ -35,7 +35,7 @@ public class Hider extends Search {
     }
 
     public Boolean tryToGuess(String guessTry){
-        Boolean b = false;
+        boolean b = false;
         if(guessTry.equals(super.getMovie())) {
             b = true;
         }

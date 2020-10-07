@@ -2,7 +2,7 @@ import java.io.File;
 import java.io.FileNotFoundException;
 import java.util.Scanner;
 
-public class Search {
+public class MovieSorter {
 
     private static int lines = 0;
     private static String movie;
@@ -21,13 +21,13 @@ public class Search {
 
     public void countLines() {
             while (scanner.hasNextLine()) {
-                this.lines++;
+                lines++;
                 scanner.nextLine();
             }
     }
 
     public int getLines(){
-        return this.lines;
+        return lines;
     }
 
     public void randomMovie() throws FileNotFoundException {
@@ -41,11 +41,11 @@ public class Search {
             scanner.nextLine();
         }
 
-        this.movie = scanner.nextLine() ;
+        movie = scanner.nextLine() ;
     }
 
     public String getMovie() {
-        return this.movie;
+        return movie;
     }
 
 }

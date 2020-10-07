@@ -5,8 +5,8 @@ public class Main {
     public static void main(String[] args) throws FileNotFoundException {
 
         Scanner scanner = new Scanner(System.in);
-        Search a = new Search();
-        Hider b;
+        MovieSorter a = new MovieSorter();
+        Guesser b;
 
         a.countLines();
         a.randomMovie();
@@ -14,7 +14,7 @@ public class Main {
 
         System.out.println("Voce tem doze tentativas para revelar todas as letras do filme!");
 
-        b = new Hider();
+        b = new Guesser();
         System.out.println(b.getHidedMovie());
 
         int i;
